@@ -29,3 +29,31 @@ Finally, the program demonstrates two ways of printing values:
 2. Passing the variable directly to `print()`, which allows Python to display the value without manual conversion.
 
 **Core concepts covered:** `input()`, variables, integer type casting with `int()`, string type casting with `str()`, arithmetic operators, string concatenation, and `print()`.
+
+### Program 2 — `string_playground.py`
+
+A hands-on exploration of Python's **string manipulation and string-searching capabilities**, using a single string value to demonstrate several commonly used string methods and operators.
+
+The program begins with the string `"Prasoon Bajpai"` and uses it as the basis for experimenting with different operations. Rather than simply performing one task, the program acts as a small **string playground**, demonstrating how Python can inspect, transform, search, and modify string data.
+
+The following concepts are explored:
+
+* **Changing letter case:**
+  `name.upper()` converts every alphabetic character in the string to uppercase, while `name.lower()` converts them to lowercase. This demonstrates Python's built-in methods for normalizing or changing the case of text.
+
+* **Finding characters and substrings:**
+  `name.find()` is used to locate the position at which a character or substring first appears. The program demonstrates both searching for a single character (`'B'`) and searching for a complete substring (`"Bajpai"`).
+
+* **Handling unsuccessful searches:**
+  The program also searches for a character that does not exist in the string (`'z'`). This demonstrates that `find()` returns `-1` when the requested character or substring cannot be found, rather than producing an error.
+
+* **Replacing text:**
+  `name.replace("Prasoon", "GOAT")` demonstrates how one portion of a string can be replaced with another string. This introduces Python's string replacement functionality and shows how a modified version of the original string can be produced.
+
+* **Membership testing with `in`:**
+  The program uses the `in` operator to check whether specific characters or substrings exist within the string. It tests both individual characters (`'B'`, `'n'`) and a complete substring (`"Bajpai"`), as well as a value that does not exist (`"Ok"`). The result of each membership test is a Boolean value: `True` if the value is present and `False` otherwise.
+
+An important aspect of the program is that it demonstrates that Python's string operations can work with **both individual characters and multiple-character substrings**. It also introduces the distinction between methods that **search or inspect** a string, such as `find()`, and methods that **produce a modified version** of a string, such as `upper()`, `lower()`, and `replace()`.
+
+**Core concepts covered:** strings, string methods, `upper()`, `lower()`, `find()`, `replace()`, the `in` membership operator, Boolean values, character searching, substring searching, string manipulation, and handling unsuccessful searches.
+
